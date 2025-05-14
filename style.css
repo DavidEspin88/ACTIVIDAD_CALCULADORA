@@ -8,3 +8,18 @@ body{
     background-color: #224878;
 }
 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: rgb(13, 146, 102);
+    padding: 15px;
+    border-radius: 32px ;
+}
