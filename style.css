@@ -5,7 +5,7 @@
 
 body{
     margin: 0;
-    background-color: #224878;
+    background-color: #1c4576;
 }
 
 .contenedor{
@@ -43,4 +43,23 @@ button:focus{
 
 .col-2{
     grid-column:span 2;
+}
+
+.display{
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #3e7fce;
+    justify-content: space-between;
+}
+
+#valor_actual{
+    font-size: 3em;
+}
+
+#valor_anterior{
+    font: size 1.5em;
 }
