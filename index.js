@@ -13,4 +13,5 @@ document.addEventListener('keydown', event => {
         display.agregarNumero(tecla);
     }
 
+
 });

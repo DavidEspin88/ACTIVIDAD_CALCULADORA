@@ -33,6 +33,25 @@ class Display{
     imprimirValores(){
     this.displayValorActual.textContent = this.valorActual;
     this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipOperacion] || ''}`;
- }
+     }
+
+    calcular(){
+        const valorAnterior=parseFloat(this.valorAnterior);
+        const valorActual=parseFloat(this.valorActual);
+
+        if(isNaN(valorActual) || isNaN(valorAnterior)) return 
+        this.valorActual=this.calculador[this.tipOperacion](valorAnterior, valorActual);
+
+    }
+
+    computar(tipo){
+        this.tipOperacion !== 'igual' && this.calcular();
+        this.tipOperacion = tipo;
+        this.valorAnterior = this.valorActual || this.valorAnterior;
+        this.valorActual='';
+        this.imprimirValores();
+     }
+
+
 
 }
