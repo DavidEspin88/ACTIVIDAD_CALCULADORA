@@ -1,5 +1,5 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', serif;
     color: white;
 }
 
@@ -34,13 +34,6 @@ button{
     background-color: rgb(34, 217, 217);
 }
 
-button:active{
-    background-color: rgb(204, 183, 44);
-}
-button:focus{
-    outline: none;
-}
-
 .col-2{
     grid-column:span 2;
 }
@@ -62,5 +55,5 @@ button:focus{
 }
 
 #valor_anterior{
-    font: size 1.5em;
+    font-size: 1.5em;
 }
