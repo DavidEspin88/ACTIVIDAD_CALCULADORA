@@ -54,10 +54,11 @@ button:focus{
     align-items: flex-end;
     background-color: #3e7fce;
     justify-content: space-between;
+    border-radius:16px;
 }
 
 #valor_actual{
-    font-size: 3em;
+    font-size: 1em;
 }
 
 #valor_anterior{
