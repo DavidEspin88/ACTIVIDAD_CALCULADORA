@@ -13,5 +13,21 @@ document.addEventListener('keydown', event => {
         display.agregarNumero(tecla);
     }
 
+    // seleccionando operadores
+    if (tecla === '+' || tecla === '-' || tecla === '*' || tecla === '/') {
+        let tipo;
+        switch (tecla) {
+            case '+': tipo = 'sumar'; break;
+            case '-': tipo = 'restar'; break;
+            case '*': tipo = 'multiplicar'; break;
+            case '/': tipo = 'dividir'; break;
+        }
+        display.computar(tipo);
+    }
 
+    //configurando igual
+
+    if(tecla==='Enter' || tecla==='='){
+        display.computar('igual');
+    }
 });
