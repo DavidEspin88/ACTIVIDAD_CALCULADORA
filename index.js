@@ -1,7 +1,5 @@
 const displayValorAnterior = document.getElementById('valor_anterior');
 const displayValorActual = document.getElementById('valor_actual');
-const botonesNumeros= document.querySelectorAll('.numero');
-const botonesOperadores= document.querySelectorAll('.operador');
 
 const display = new Display(displayValorAnterior,displayValorActual);
 
@@ -30,7 +28,6 @@ document.addEventListener('keydown', event => {
     if(tecla==='Enter' || tecla==='='){
         display.computar('igual');
     }
-
 
     //configurar borrar ultimo digito
     if(tecla==='Backspace'){

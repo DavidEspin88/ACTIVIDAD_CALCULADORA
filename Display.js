@@ -41,7 +41,6 @@ class Display{
 
         if(isNaN(valorActual) || isNaN(valorAnterior)) return 
         this.valorActual=this.calculador[this.tipOperacion](valorAnterior, valorActual);
-
     }
 
     computar(tipo){
