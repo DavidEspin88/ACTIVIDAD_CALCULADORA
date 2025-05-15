@@ -13,6 +13,10 @@ class Display{
             multiplicar:'x',
         }
     }
+      borrar(){
+        this.valorActual=this.valorActual.toString().slice(0,-1);
+        this.imprimirValores();
+      }
  
     agregarNumero(numero){
         this.valorActual= this.valorActual.toString()+numero.toString();
@@ -22,6 +26,6 @@ class Display{
     imprimirValores(){
     this.displayValorActual.textContent = this.valorActual;
     this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipOperacion] || ''}`;
-}
+ }
 
 }
