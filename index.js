@@ -30,4 +30,15 @@ document.addEventListener('keydown', event => {
     if(tecla==='Enter' || tecla==='='){
         display.computar('igual');
     }
+
+
+    //configurar borrar ultimo digito
+    if(tecla==='Backspace'){
+        display.borrar();
+    }
+
+    //configurar borrar todo
+    if(tecla === 'Escape'){
+        display.borrarTodo();
+    }
 });
