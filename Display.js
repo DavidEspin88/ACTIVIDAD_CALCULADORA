@@ -17,7 +17,14 @@ class Display{
         this.valorActual=this.valorActual.toString().slice(0,-1);
         this.imprimirValores();
       }
- 
+      
+       borrarTodo(){
+        this.valorActual='';
+        this.valorAnterior='';
+        this.tipOperacion=undefined;
+        this.imprimirValores();
+     } 
+
     agregarNumero(numero){
         this.valorActual= this.valorActual.toString()+numero.toString();
         this.imprimirValores();
